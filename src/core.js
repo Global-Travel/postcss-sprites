@@ -460,10 +460,10 @@ export function updateRule(rule, token, image) {
 		value: `url(${spriteUrl})`
 	}).cloneAfter({
 		prop: 'background-position',
-		value: `${posX}px ${posY}px`
+		value: `${posX/75}rem ${posY/75}rem`
 	}).cloneAfter({
 		prop: 'background-size',
-		value: `${sizeX}px ${sizeY}px`
+		value: `${sizeX/75}rem ${sizeY/75}rem`
 	});
 }
 

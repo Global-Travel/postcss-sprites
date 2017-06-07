@@ -1,7 +1,7 @@
 {
-  "name": "postcss-sprites",
-  "version": "4.2.1",
-  "description": "Generate spritesheets from stylesheets",
+  "name": "postcss-sprites-rem",
+  "version": "4.2.2",
+  "description": "Generate spritesheets from stylesheets fork from https://github.com/2createStudio/postcss-sprites",
   "main": "lib/index.js",
   "keywords": [
     "postcss-plugin",
@@ -14,17 +14,14 @@
     "svg"
   ],
   "scripts": {
-    "test": "./node_modules/.bin/ava test/*.js --verbose --serial",
     "build": "./node_modules/.bin/babel src/ --out-dir lib/",
-    "watch": "./node_modules/.bin/babel --watch src/ --out-dir lib/",
-    "prepublish": "npm test",
-    "pretest": "npm run build"
+    "watch": "./node_modules/.bin/babel --watch src/ --out-dir lib/"
   },
-  "repository": "2createStudio/postcss-sprites",
-  "author": "2createStudio",
+  "repository": "Global-Travel/postcss-sprites",
+  "author": "GeforceLee",
   "license": "MIT",
-  "bugs": "https://github.com/2createStudio/postcss-sprites/issues",
-  "homepage": "https://github.com/2createStudio/postcss-sprites#readme",
+  "bugs": "https://github.com/Global-Travel/postcss-sprites/issues",
+  "homepage": "https://github.com/Global-Travel/postcss-sprites#readme",
   "devDependencies": {
     "ava": "^0.15.2",
     "babel-cli": "^6.4.0",
