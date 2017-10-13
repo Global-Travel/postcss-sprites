@@ -1,6 +1,6 @@
 {
   "name": "postcss-sprites-rem",
-  "version": "4.2.4",
+  "version": "4.2.6",
   "description": "Generate spritesheets from stylesheets fork from https://github.com/2createStudio/postcss-sprites",
   "main": "lib/index.js",
   "keywords": [
