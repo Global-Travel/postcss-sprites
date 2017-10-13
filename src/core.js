@@ -4,7 +4,7 @@ import Promise from 'bluebird';
 import _ from 'lodash';
 import debug from 'debug';
 import RasterFactory from './factories/raster';
-// import VectorFactory from './factories/vector';
+import VectorFactory from './factories/vector';
 
 /**
  * Wrap with promises.
@@ -310,7 +310,7 @@ export function runSpritesmith(opts, images) {
 				return tmp.join(GROUP_DELIMITER);
 			})
 			.map((images, tmp) => {
-				const factory = tmp.indexOf(TYPE_VECTOR) > -1 ? RasterFactory : RasterFactory;
+				const factory = tmp.indexOf(TYPE_VECTOR) > -1 ? VectorFactory : RasterFactory;
 
 				return factory(opts, images)
 					.then((spritesheet) => {
